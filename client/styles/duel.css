@@ -31,7 +31,7 @@ span.username {
 
 .duel-container {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
 }
 
@@ -59,4 +59,16 @@ span.username {
 .stat .value {
     justify-content: flex-end;
     white-space: nowrap;
+}
+
+.green {
+    background-color: rgb(33, 216, 49);
+}
+
+.red {
+    background-color: rgb(223, 43, 43);
+}
+
+.yellow {
+    background-color: rgb(245, 245, 22);
 }

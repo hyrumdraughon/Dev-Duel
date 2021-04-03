@@ -1,5 +1,5 @@
 body {
-    background-color: #efefef;
+    background-color: skyblue;
     width: 100vw;
     height: 100vh;
 
@@ -20,6 +20,9 @@ body {
 }
 
 header {
+    background-color: rgb(64, 206, 64);
+    padding: 2%;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -87,6 +90,11 @@ button {
     border-radius: 4px;
     transition-duration: 0.2s;
     text-transform: uppercase;
+}
+
+button i {
+    padding-right: 5%;
+    color: rgb(64, 206, 64);
 }
 
 button:hover {

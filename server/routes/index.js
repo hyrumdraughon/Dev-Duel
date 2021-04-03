@@ -25,13 +25,8 @@ export default () => {
 
   /** GET /api/user/:username - Get user */
   router.get('/user/:username', validate(validation.user), async (req, res) => {
-    /*
-      TODO
-      Fetch data for user specified in path variable
-      parse/map data to appropriate structure and return as JSON object
-    */
     const username = req.params.username
-
+    
     try {
       res.json(await getUserData(username))
     } catch (err) {
@@ -42,12 +37,7 @@ export default () => {
 
   /** GET /api/users? - Get users */
   router.get('/users/', validate(validation.users), async (req, res) => {
-    /*
-      TODO
-      Fetch data for users specified in query
-      parse/map data to appropriate structure and return as a JSON array
-    */
-    //console.log(req.query)
+
     const username1 = req.query.username[0]
     const username2 = req.query.username[1]
 
@@ -55,6 +45,7 @@ export default () => {
       let userDataArray = []
       userDataArray[0] = await getUserData(username1)
       userDataArray[1] = await getUserData(username2)
+
       res.json(userDataArray)
     } catch (err) {
       res.send(err.message)

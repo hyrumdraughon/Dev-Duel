@@ -2,6 +2,7 @@ import axios from 'axios'
 import token from '../../token'
 
 export default async (username) => {
+
     let userData = await axios.get(`http://api.github.com/users/${username}`, 
     {
         headers: {
