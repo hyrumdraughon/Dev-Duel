@@ -76,7 +76,7 @@ $('form').submit(() => {
         message = message.concat('you must provide two usernames to duel; ')
       }
 
-      if (typeof data === 'undefined' && usernameLeft !== 0 && usernameRight !== 0) {
+      if (typeof data === 'undefined' && usernameLeft.length !== 0 && usernameRight.length !== 0) {
         message = message.concat('one or both of the usernames do not exist')
       }
 
